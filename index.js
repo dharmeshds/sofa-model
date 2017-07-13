@@ -29,8 +29,10 @@ module.exports = function(options) {
       if(options.async) {
         return new Promise(function(resolve, reject) {
           validate.async(self.results, options.validate, options.valOptions || {})
-            .then(function() {
+            .then(function(attribs) {
+              self.results = attribs;
               resolve(self.results);
+
             }, function(err) {
               self.errors = err;
               reject(err);
