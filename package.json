@@ -20,7 +20,7 @@
   "dependencies": {
     "bluebird": "^2.9.34",
     "deepmerge": "^0.2.10",
-    "validate.js": "^0.8.0",
+    "validate.js": "https://github.com/dharmeshds/validate.js/tarball/4f377ad59576b6805dda2358e8f97ac3baf536cd",
     "validator": "^4.0.5"
   },
   "devDependencies": {
